@@ -274,6 +274,8 @@ Player.prototype.act = function(step, level, keys) {
 
   // Losing animation
   if (level.status == "lost") {
+    var audio = new Audio('squeal.mp3');
+    audio.play();
     this.pos.y += step;
     this.size.y -= step;
   }
