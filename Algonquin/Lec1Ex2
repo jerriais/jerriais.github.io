@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Social Service Worker</title>
+</head>
+<body>
+<h1>Social Service Worker</h1>
+<p>
+<a href="#Contact">Contact us</a>
+The Social Service Worker program at Algonquin College&rsquo;s Perth Campus prepares students to empower individuals, groups, and communities who are in the process of change and growth. The program specializes in rural social service work and students work in partnership with people in El Salvador through the Algonquin College SalvAide Project.
+
+<h2>Our Program</h2>
+
+This two-year Ontario College Diploma program prepares students to empower individuals, groups, and communities who are in the process of change and growth.
+
+The program consists of four levels where learning occurs in both the classroom and social service agency settings. The curriculum includes courses in social service ethics, social welfare, addictions, mental health, and crisis intervention. Other courses focus on work with children and families, seniors and people with disabilities.
+
+The program specializes in rural social service work and students work in partnership with people in El Salvador through the Algonquin College SalvAide Project.
+
+Students participate in a series of workshops led by a native elder.
+<a name="Contact">section X</a>
+<h2>For more information, please contact:</h2>
+1385 Woodroffe Avenue<br/>
+Ottawa, Ontario<br/>
+K2G 1V8<br/>
+Canada<br/>
+Phone: 613-727-4723<br/>
+<a href="http://algonquincollege.com">Link to Algonquin college</a>
+<br>
+<br>
+<table border="1">
+  <tr>
+    <th colspan = "2" bgcolor = "#00FFFF">Heading top</th>
+  </tr>
+  <tr>
+    <th rowspan = "2" width = "80" height = "100">
+      Heading1
+    </th>
+    <td>
+      Table data
+    </td>
+  </tr>
+  <tr>
+    <!-- <th>
+      Heading2
+    </th> -->
+    <td>
+      Table data
+    </td>
+  </tr>
+</table>
+</p>
+</body>
+</html>
