@@ -1,9 +1,109 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Cookie Page</title>
-</head>
-<body>
-<h1>Cookie Page</h1>
-<p>Some paragraph text</p>
-</body>
+    <script>
+
+function setCookie(cname,cvalue,exseconds)
+{
+var d = new Date();
+d.setTime(d.getTime()+(exseconds*1000));
+var expires = "expires="+d.toGMTString();
+document.cookie = cname+"="+cvalue+"; "+expires;
+}
+
+function getCookie(cname)
+{
+var name = cname + "=";
+var ca = document.cookie.split(';');
+for(var i=0; i<ca.length; i++) 
+  {
+  var c = ca[i].trim();
+  if (c.indexOf(name)==0) 
+return c.substring(name.length,c.length);
+  }
+return "";
+}
+
+function checkCookie()
+{
+var user=getCookie("username");
+if (user!="")
+  {
+  alert("Welcome again " + user);
+  }
+else 
+  {
+  user = prompt("Please enter your name:","");
+  if (user!="" && user!=null)
+    {
+    setCookie("username",user,15);
+    }
+  }
+    document.querySelector('.cookie1').innerHTML = 'User Name = ' + user;
+}
+</script></head>
+
+<body onload="checkCookie()">
+    
+    <p>Cookie Details:</p>
+<div class="cookie1"></div>
+
+  <p>Code Snippet</p>
+  <code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;script&gt;
+
+function setCookie(cname,cvalue,exseconds)
+{
+var d = new Date();
+d.setTime(d.getTime()+(exseconds*1000));
+var expires = "expires="+d.toGMTString();
+document.cookie = cname+"="+cvalue+"; "+expires;
+}
+
+function getCookie(cname)
+{
+var name = cname + "=";
+var ca = document.cookie.split(';');
+for(var i=0; i&lt;ca.length; i++) 
+  {
+  var c = ca[i].trim();
+  if (c.indexOf(name)==0) 
+return c.substring(name.length,c.length);
+  }
+return "";
+}
+
+function checkCookie()
+{
+var user=getCookie("username");
+if (user!="")
+  {
+  alert("Welcome again " + user);
+  }
+else 
+  {
+  user = prompt("Please enter your name:","");
+  if (user!="" && user!=null)
+    {
+    setCookie("username",user,15);
+    }
+  }
+    document.querySelector('.cookie1').innerHTML = 'User Name = ' + user;
+}
+&lt;/script&gt;&lt;/head&gt;
+
+&lt;body onload="checkCookie()"&gt;
+    
+    &lt;p&gt;Cookie Details:&lt;/p&gt;
+&lt;div class="cookie1"&gt;&lt;/div&gt;
+
+  &lt;p&gt;Code&lt;/p&gt;
+  &lt;p&gt;Code&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+</code>
+    </body>
 </html>
