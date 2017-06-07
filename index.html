@@ -1,9 +1,25 @@
 <html>
 <head>
-<title>Jerriais Github</title>
+<title>Jerriais Github Public Site</title>
 </head>
 <body>
-<h1>Solar Roof Calculator</h1>
-<p>Some paragraph text</p>
+<h1>Scholarship Calculator</h1>
+<p id="calorieCalculator">
+  When you donate <span class="TKAdjustableNumber" data-var="cookies"> GBP</span>,
+  you consume <b data-var="calories"> calories</b>. That's 
+  <span data-var="dailyPercent">%</span> of your recommended daily calories.</p>
+  <script>
+    var tangle = new Tangle (document.getElementById("calorieCalculator"), {
+    initialize: function () {
+        this.cookies = 3;
+        this.caloriesPerCookie = 50;
+        this.dailyCalories = 2100;
+    },
+    update: function () {
+        this.calories = this.cookies * this.caloriesPerCookie;
+        this.dailyPercent = 100 * this.calories / this.dailyCalories;
+    }
+});
+  </script>
 </body>
 </html>
