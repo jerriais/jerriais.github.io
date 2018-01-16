@@ -1,24 +1,37 @@
 <!DOCTYPE HTML>
-<html ng-app="">
+<html>
 
+<head>
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+
 
 
 <body>
   <h1>Angular Concepts</h1>
   <div class="container">
     <h3>Binding with Angular</h3>
-    Filter:
-    <input type="text" ng-model="name"> {{name}}
 
   </div>
-  <div class="container" ng-init="customers=[{name: 'Matthew Wong Thornington',city: 'Jersey, UK'},{name: 'Bonnie Wong Thornington',city: 'Cornwall, Canada'},{name: 'Tai Thornington',city: 'Truro, UK'},{name: 'Aila Thornington',city: 'Winchester, UK'}]">
+  <div class="container" data-ng-controller="SimpleController">
     <h3>Filtering with Angular</h3>
+    Filter:
+    <input type="text" ng-model="name">
     <ul>
       <li ng-repeat="cust in customers | filter:name | orderBy: 'city'">{{cust.name | uppercase}} - {{cust.city | lowercase}}</li>
     </ul>
   </div>
+  <script>
+    function SimpleController($scope) {
+      $scope.customers = [
+        { name: 'Matthew Wong Thornington', city: 'Jersey, UK' },
+        { name: 'Bonnie Wong Thornington', city: 'Cornwall, Canada' },
+        { name: 'Tai Thornington', city: 'Truro, UK' },
+        { name: 'Aila Thornington', city: 'Winchester, UK' }
+      ];
+    }
+  </script>
 </body>
 
 
