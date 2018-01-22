@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html ng-app="demoApp">
+
+<head>
+  <script src="scripts/angular.min.js"></script>
+
+</head>
+
+<!-- <body ng-init="customers = [ 
+  { name: 'Matthew Wong Thornington', city: 'Jersey, UK' }, 
+  { name: 'Bonnie Wong Thornington', city: 'Cornwall,
+  Canada' }, 
+  { name: 'Tai Thornington', city: 'Truro, UK' }, 
+  { name: 'Aila Thornington', city: 'Winchester, UK' } ]"> -->
+
+<body>
+  <div>
+    <h1>Angular Concepts</h1>
+    <h3>Binding with Angular</h3>
+    <h3>Filtering with Angular</h3>
+    <!-- Filter:
+      <input type="text" ng-model="name" />
+      <ul>
+        <li ng-repeat="cust in customers | filter:name | orderBy: 'city'">{{cust.name}} - {{cust.city}}</li>
+      </ul> -->
+  </div>
+  <div class="container" ng-controller="SimpleController">
+    <h3>Filtering Data using "filter"</h3>
+    Name:
+    <br />
+    <input type="text" ng-model="inputData.name" placeholder="name" />
+    <br /> City:
+    <br />
+    <input type="text" ng-model="inputData.city" placeholder="city" />
+    <br />
+    <button class="btn btn-primary" data-ng-click="addCustomer()">Add Customer</button>
+    <br />
+    <br />
+
+    <ul>
+      <li ng-repeat="cust in customers">{{cust.name}} - {{cust.city}}</li>
+    </ul>
+
+
+  </div>
+  <script>
+    var demoApp = angular.module('demoApp', []);
+    function SimpleController($scope) {
+      $scope.customers = [
+        { name: 'Dave Jones', city: 'Phoenix' },
+        { name: 'Jamie Riley', city: 'Atlanta' },
+        { name: 'Heedy Wahlin', city: 'Chandler' },
+        { name: 'Thomas Winter', city: 'Seattle' }
+      ];
+      $scope.addCustomer = function () {
+        $scope.customers.push({ name: $scope.inputData.name, city: $scope.inputData.city });
+      };
+    }
+    demoApp.controller('SimpleCOntroller', SimpleController);
+  </script>
+  <!-- <script>
+    function SimpleController($scope) {
+      $scope.customers = [
+        { name: 'Matthew Wong Thornington', city: 'Jersey, UK' },
+        { name: 'Bonnie Wong Thornington', city: 'Cornwall, Canada' },
+        { name: 'Tai Thornington', city: 'Truro, UK' },
+        { name: 'Aila Thornington', city: 'Winchester, UK' }
+      ];
+    }
+  </script> -->
+
+</body>
+
+</html>
