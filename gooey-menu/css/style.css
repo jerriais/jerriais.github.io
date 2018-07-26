@@ -24,10 +24,11 @@ h1 {
 }
 
 .menu-item, .menu-open-button {
-  background: #ff4081;
+  background: #3f51b5;
+  background-image: url("../assets/Rotating_globe-small.gif");
   border-radius: 100%;
-  width: 80px;
-  height: 80px;
+  width: 79px;
+  height: 79px;
   margin-left: -40px;
   position: absolute;
   top: 20px;
@@ -107,6 +108,7 @@ h1 {
 }
 .menu-item:nth-child(3) {
   transition-duration: 70ms;
+  background-image: url("../assets/caribbean.png")
 }
 .menu-item:nth-child(4) {
   transition-duration: 130ms;
