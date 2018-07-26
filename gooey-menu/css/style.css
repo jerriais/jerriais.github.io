@@ -102,25 +102,29 @@ h1 {
   text-align: left;
 }
 
-.menu-item:hover {
+/* .menu-item:hover {
   background: white;
   color: #ff4081;
-}
+} */
 .menu-item:nth-child(3) {
   transition-duration: 70ms;
-  background-image: url("../assets/caribbean.png")
+  display: none;
 }
 .menu-item:nth-child(4) {
+  background-image: url("../assets/atlantic.png");
   transition-duration: 130ms;
 }
 .menu-item:nth-child(5) {
   transition-duration: 190ms;
+  background-image: url("../assets/pacific.png");
 }
 .menu-item:nth-child(6) {
   transition-duration: 250ms;
+  background-image: url("../assets/indian.png");
 }
 .menu-item:nth-child(7) {
   transition-duration: 310ms;
+  display: none;
 }
 
 .menu-open-button {
