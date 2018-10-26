@@ -34,12 +34,12 @@
         </table>
         <h2><input type="submit" value="Submit" /></h2>
     </form>
-    <p> <canvas id="myChart" width="400" height="400"></canvas><canvas id="myBarChart" width="200" height="400"></canvas></p>
+    <p> <canvas id="myChart" width="400" height="400"></canvas></p><p></p><canvas id="myBarChart" width="200" height="400"></canvas></p>
 
-    <script src="chart.min.js"></script>
-    <script>// <![CDATA[
-        /* todo google map input, angular js conversion, dual input[DONE], 
-        round  numbers on tooltips, output csv, hide api-key, more inputs, slider inputs */
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script>
+        /* todo Fetch API. google map input, angular js conversion, dual input[DONE], 
+        round  numbers on tooltips, output csv, hide api-key, more inputs, slider inputs, AnyChart implementation*/
 
         var previousData;
         function update() {
@@ -138,15 +138,20 @@
             };
 
             var ctx = document.getElementById("myChart").getContext("2d");
-            var myNewChart = new Chart(ctx).Line(chartData);
+            var myNewChart = new Chart(ctx, {
+                type: "line",
+                data: chartData,
+            });
 
             var barCtx = document.getElementById("myBarChart").getContext("2d");
-            var myNewBarChart = new Chart(barCtx).Bar(barChartData, { barDatasetSpacing: 5, }
-            );
+            var myNewBarChart = new Chart(ctx, {
+                type: "bar",
+                data: barChartData,
+            });
         }
 
         update();
-// ]]></script>
+    </script>
     </p>
 </body>
 
