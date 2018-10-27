@@ -11,31 +11,31 @@
 
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "http://developer.nrel.gov/api/pvwatts/v5.json?api_key=sqwsN0LvPjhe16TTcTN7GL1nGxaerdC5c742GKaO&radius=0&lat=45&lon=-75&system_capacity=10&azimuth=" + azimuth.value + "&tilt=" + tilt.value + "&array_type=1&dc_ac_ratio=1.2&module_type=1&losses=10&dataset=intl", false);
-    xhr.send()
+    xhr.send();
 
-    var data = JSON.parse(xhr.response)
+    var data = JSON.parse(xhr.response);
 
     var xhr2 = new XMLHttpRequest();
     xhr2.open("GET", "http://developer.nrel.gov/api/pvwatts/v5.json?api_key=sqwsN0LvPjhe16TTcTN7GL1nGxaerdC5c742GKaO&radius=0&lat=45&lon=-75&system_capacity=10&azimuth=" + azimuth2.value + "&tilt=" + tilt2.value + "&array_type=1&dc_ac_ratio=1.2&module_type=1&losses=10&dataset=intl", false);
-    xhr2.send()
+    xhr2.send();
 
-    var data2 = JSON.parse(xhr2.response)
+    var data2 = JSON.parse(xhr2.response);
 
-    var dataMonthly = [data.outputs.ac_monthly]
+    var dataMonthly = [data.outputs.ac_monthly];
     var x = 0;
-    var len = data.outputs.ac_monthly.length
+    var len = data.outputs.ac_monthly.length;
             while (x < len) {
         dataMonthly[x] = Math.round(data.outputs.ac_monthly[x]);
-    x++
+    x++;
 }
 
-var data2Monthly = [data2.outputs.ac_monthly]
+var data2Monthly = [data2.outputs.ac_monthly];
 var x2 = 0;
-var len2 = data2.outputs.ac_monthly.length
-console.log(len2)
+var len2 = data2.outputs.ac_monthly.length;
+console.log(len2);
             while (x2 < len2) {
         data2Monthly[x2] = Math.round(data2.outputs.ac_monthly[x2]);
-    x2++
+    x2++;
 }
 
 console.log(data2Monthly);
