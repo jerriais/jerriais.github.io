@@ -22,6 +22,9 @@
     var data2 = JSON.parse(xhr2.response);
 
     var dataMonthly = [data.outputs.ac_monthly];
+    var state = [data.station_info.state];
+    var city = [data.station_info.city];
+    var distance = [data.station_info.distance];
     var x = 0;
     var len = data.outputs.ac_monthly.length;
             while (x < len) {
@@ -39,6 +42,9 @@ console.log(len2);
 }
 
 console.log(data2Monthly);
+console.log(state);
+console.log(city);
+console.log(distance);
 
             var chartData = {
         labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
