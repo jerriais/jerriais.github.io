@@ -5,3 +5,7 @@ body {
      width: 100vw;
      margin: 0 auto;
 }
+
+@media screen and (orientation:landscape) {
+    background-image: url('assets/floating-point-vertical.jpg');
+}
