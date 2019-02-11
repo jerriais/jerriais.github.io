@@ -6,6 +6,6 @@ body {
      margin: 0 auto;
 }
 
-@media screen and (orientation:landscape) {
+@media screen and (orientation: portrait) {
     background-image: url('assets/floating-point-vertical.jpg');
 }
