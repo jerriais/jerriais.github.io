@@ -1,6 +1,37 @@
+body{
+    display: flex;
+    height: calc(100vh - 16px);
+}
 img {
-  max-width: 100px;
+  max-width: 600px;
+  max-height: 600px;
+  min-height: 100px;
 }
 div{
-  border: 2px red;
+    display: flex;
+  border: 1px solid red;
+}
+#panel-footer{
+    align-content: flex-end;
+    min-height: 20px;
+    min-width: 600px;
+}
+#rpanel{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#lpanel{
+
+}
+#insights-tab{
+    flex-direction: column;
+    overflow: auto;
+}
+.footer-img{
+    min-height: 20px;
+}
+#rpanel-top{
+flex-grow: 2;
 }
