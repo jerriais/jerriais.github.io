@@ -1,9 +1,18 @@
 body {
      background-size: cover;
-     background-image: url('assets/floatingpoint.jpg');
+     background-image: url('assets/boat-in-ocean-cropped-pi.jpg');
      height: 100vh;
      width: 100vw;
      margin: 0 auto;
+}
+
+#pi {
+    font-family: 'Courier New', Courier, monospace;
+    color: #6DADCB;
+    font-size: 800%;
+    position: absolute;
+    left: 35%;
+    word-break: keep-all;
 }
 
 @media screen and (orientation: portrait) {
