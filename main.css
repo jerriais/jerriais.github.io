@@ -10,7 +10,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: #6DADCB;
     font-size:300%;
-    text-shadow: -16px -8px 4px #ADADAD;
+    text-shadow: -16px -8px 4px rgba(173,173,173,0.5);
     position: absolute;
     left: 5%;
     top: 5%;
