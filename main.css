@@ -6,11 +6,17 @@ body {
      margin: 0 auto;
 }
 
+.boat-pi {
+    height: 100vh;
+    width: 100vw;
+}
+
 .title {
      -webkit-text-stroke: 1px black;
+     font-size: calc(32px + 1.5vw);
      font-family: 'Stylish', sans-serif;
     color:navy;
-    font-size:300%;
+    /* font-size:300%; */
     text-shadow: -3px -3px 3px rgba(211,211,211,0.5);
     position: absolute;
     left: 5%;
