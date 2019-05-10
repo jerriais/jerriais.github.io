@@ -1,13 +1,60 @@
-<html>
+<html lang="en" class="no-js">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Floating Point - a site about sailing and coding</title>
-    <link rel="stylesheet" href="main.css?v=0.0.3">
+  <link href="https://fonts.googleapis.com/css?family=Stylish" rel="stylesheet">
+  <link rel="stylesheet" href="main.css?v=0.0.3">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <link rel="stylesheet" type="text/css" href="css/pater.css" />
+
 </head>
 
-<body>
-<div class=title>Floating Point - the voyage of the Thornington family on Anjulia Sue</div>
-<div class=title id=link><a link href="http://bonthorn.blogspot.com/">Click here to follow Bonnie's blog</a><br><br><a link href="https://feedburner.google.com/fb/a/mailverify?uri=BonthornInOttawaCanada">Or here to subscribe by email</a><br><br>More content coming soon ...</div>
+<body class="demo-1 loading">
+
+  <main class="site-wrapper">
+    <div class="content content--fixed">
+      <div class=title>Floating Point - the voyage of the Thornington family on Anjulia Sue</div>
+      <div class=title id=link><a link target="_blank" href="http://bonthorn.blogspot.com/">Click here to follow
+          Bonnie's
+          blog</a><br><br><a link href="https://feedburner.google.com/fb/a/mailverify?uri=BonthornInOttawaCanada">Or
+          here to subscribe by email</a><br><br>More content coming soon ...</div>
+    </div>
+    <div class="content">
+      <div class="slide-wrapper">
+        <div class="slide-item">
+          <img src="assets/boat-in-ocean-cropped-pi.jpg" class="slide-item__image">
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/demo.js"></script>
+  <script src="js/pixi.min.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script>
+    imagesLoaded(document.body, () => document.body.classList.remove('loading'));
+
+    var spriteImages = document.querySelectorAll('.slide-item__image');
+    var spriteImagesSrc = [];
+
+    for (var i = 0; i < spriteImages.length; i++) {
+      var img = spriteImages[i];
+      spriteImagesSrc.push(img.getAttribute('src'));
+    }
+
+    var initCanvasSlideshow = new CanvasSlideshow({
+      sprites: spriteImagesSrc,
+      displacementImage: 'assets/clouds.jpg',
+      autoPlay: true,
+      autoPlaySpeed: [10, 3],
+      displaceScale: [200, 70]
+    });
+  </script>
 </body>
 
 </html>
