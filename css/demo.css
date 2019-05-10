@@ -31,17 +31,17 @@ body {
 }
 
 /* Fade effect */
-.js body {
+/* .js body {
 	opacity: 0;
 	transition: opacity 0.3s;
 }
 
 .js body.render {
 	opacity: 1;
-}
+} */
 
 /* Page Loader */
-.js .loading::before {
+/* .js .loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -66,7 +66,7 @@ body {
 	opacity: 0.4;
 	background: var(--color-link);
 	animation: loaderAnim 0.7s linear infinite alternate forwards;
-}
+} */
 
 @keyframes loaderAnim {
 	to {
@@ -89,15 +89,15 @@ a:focus {
 	outline: none;
 }
 
-.hidden {
+/* .hidden {
 	position: absolute;
 	overflow: hidden;
 	width: 0;
 	height: 0;
 	pointer-events: none;
-}
+} */
 
-.message {
+/* .message {
 	background: var(--color-text);
 	color: var(--color-bg);
 	text-align: center;
@@ -105,16 +105,16 @@ a:focus {
 	display: none;
 	position: relative;
 	z-index: 100;
-}
+} */
 
 /* Icons */
-.icon {
+/* .icon {
 	display: block;
 	width: 1.5em;
 	height: 1.5em;
 	margin: 0 auto;
 	fill: currentColor;
-}
+} */
 
 main {
 	position: relative;
@@ -154,7 +154,7 @@ main {
 }
 
 /* Header */
-.codrops-header {
+/* .codrops-header {
 	position: relative;
 	z-index: 100;
 	display: flex;
@@ -216,10 +216,10 @@ main {
 
 a.demo--current {
 	pointer-events: none;
-}
+} */
 
 /* Top Navigation Style */
-.codrops-links {
+/* .codrops-links {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -297,5 +297,5 @@ a.demo--current {
 	}
 	.codrops-links {
 		margin: 0;
-	}
-}
+	} */
+
