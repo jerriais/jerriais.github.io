@@ -30,54 +30,18 @@ body {
 	--color-nav: #fff;
 }
 
-.demo-2 {
-	--color-text: #fff;
-    --color-bg: #000;
-    --color-link: #9cf9db;
-    --color-link-hover: #fff;
-    --color-info: #f3a145;
-    --color-nav: #fff;
-}
-
-.demo-3 {
-	--color-text: #fff;
-	--color-bg: #a9b1b7;
-	--color-link: #201b18;
-	--color-link-hover: #224d94;
-	--color-info: #fff473;
-	--color-nav: #fff;
-}
-
-.demo-4 {
-	--color-text: #81838c;
-    --color-bg: #000;
-    --color-link: #96e23e;
-    --color-link-hover: #fff;
-    --color-info: #ea7836;
-    --color-nav: #fff;
-}
-
-.demo-5 {
-    --color-text: #fff;
-    --color-bg: #000;
-    --color-link: #fff;
-    --color-link-hover: #2a3cbb;
-    --color-info: #f7fb40;
-    --color-nav: #fff;
-}
-
 /* Fade effect */
-.js body {
+/* .js body {
 	opacity: 0;
-	transition: opacity 0.3s;		
+	transition: opacity 0.3s;
 }
 
 .js body.render {
 	opacity: 1;
-}
+} */
 
 /* Page Loader */
-.js .loading::before {
+/* .js .loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -102,7 +66,7 @@ body {
 	opacity: 0.4;
 	background: var(--color-link);
 	animation: loaderAnim 0.7s linear infinite alternate forwards;
-}
+} */
 
 @keyframes loaderAnim {
 	to {
@@ -125,15 +89,15 @@ a:focus {
 	outline: none;
 }
 
-.hidden {
+/* .hidden {
 	position: absolute;
 	overflow: hidden;
 	width: 0;
 	height: 0;
 	pointer-events: none;
-}
+} */
 
-.message {
+/* .message {
 	background: var(--color-text);
 	color: var(--color-bg);
 	text-align: center;
@@ -141,16 +105,16 @@ a:focus {
 	display: none;
 	position: relative;
 	z-index: 100;
-}
+} */
 
 /* Icons */
-.icon {
+/* .icon {
 	display: block;
 	width: 1.5em;
 	height: 1.5em;
 	margin: 0 auto;
 	fill: currentColor;
-}
+} */
 
 main {
 	position: relative;
@@ -190,7 +154,7 @@ main {
 }
 
 /* Header */
-.codrops-header {
+/* .codrops-header {
 	position: relative;
 	z-index: 100;
 	display: flex;
@@ -252,10 +216,10 @@ main {
 
 a.demo--current {
 	pointer-events: none;
-}
+} */
 
 /* Top Navigation Style */
-.codrops-links {
+/* .codrops-links {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -333,5 +297,5 @@ a.demo--current {
 	}
 	.codrops-links {
 		margin: 0;
-	}
-}
+	} */
+
