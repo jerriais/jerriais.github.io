@@ -24,8 +24,8 @@ body {
 .demo-1 {
 	--color-text: #fff;
 	--color-bg: #000;
-	--color-link: #8fe8ff;
-	--color-link-hover: #fff;
+	--color-link: #fff;
+	--color-link-hover: rgb(193, 226, 236);
 	--color-info: #72af3a;
 	--color-nav: #fff;
 }
