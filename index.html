@@ -29,35 +29,39 @@
       <div class="below-pi">
         <div class=link id=link>
           <article class="coding">
-            <h3>
-              Coding
-            </h3>
-            <ul>
+            <h2>
+
+                Coding
+              <br><br>
+            </h2>
+
               <a link rel="noreferrer" target="_blank" href="http://bonthorn.blogspot.com/">About Me</a>
-            </ul>
-            <ul>
+            <br><br>
+
               <a link rel="noreferrer"
                 href="https://feedburner.google.com/fb/a/mailverify?uri=BonthornInOttawaCanada">Portfolio</a>
-            </ul>
-            <ul>
+            <br><br>
+
               <a link rel="noreferrer" href="https://www.floating-point.ca/travelpod/bonthorn.profile.html">Solar Calculator</a>
-            </ul>
+            <br><br>
           </article>
           <article class="sailing">
-            <h3>
-              Sailing
-            </h3>
-            <ul>
+            <h2>
+
+                Sailing
+              <br><br>
+            </h2>
+
               <a link rel="noreferrer" target="_blank" href="http://bonthorn.blogspot.com/">Our
                 blog</a>
-            </ul>
-            <ul>
+            <br><br>
+
               <a link rel="noreferrer"
                 href="https://feedburner.google.com/fb/a/mailverify?uri=BonthornInOttawaCanada">Subscribe</a>
-            </ul>
-            <ul>
+            <br><br>
+
               <a link rel="noreferrer" href="https://www.floating-point.ca/travelpod/bonthorn.profile.html">Previous trips</a>
-            </ul>
+            <br><br>
 
           </article>
         </div>
@@ -94,6 +98,19 @@
       autoPlaySpeed: [10, 3],
       displaceScale: [200, 70]
     });
+  </script>
+  <script>
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+// We listen to the resize event
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
   </script>
 </body>
 

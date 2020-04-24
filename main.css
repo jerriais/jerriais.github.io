@@ -1,7 +1,7 @@
 body {
      background-size: cover;
      background-image: url('assets/boat-in-ocean-cropped-pi.jpg');
-     height: 100vh;
+     height: calc(var(--vh, 1vh) * 100);
      width: 100vw;
      margin: 0 auto;
      text-shadow: 3px -3px 3px rgba(13, 3, 56, 1);
@@ -66,32 +66,34 @@ article {
     border-radius: 10px;
     color: white;
     /* margin: 5vw; */
-    width: 45vw;
+    width: 47vw;
     height: 40vh;
     font-size: calc(10px + 1vw);
     padding: 10px;
+    text-align: center;
 }
 
 .coding {
     position: absolute;
-    left: 2.5vw;
+    left: 2vw;
 }
 
 .sailing {
     position: absolute;
-    left: 52.5vw;
+    right: 2vw;
 }
 .link {
     /* position: absolute;
     top: 60%;
     left: 10%; */
+    text-shadow: none;
     color: rgba(255, 255, 255, 0.125);
     font-size: calc(12px + 3vw);
     font-family: 'Amatic SC', cursive;
     font-family: 'Fredericka the Great', serif;
-    font-weight: 550;
+    font-weight: 500;
     line-height: 3.5vh;
-    text-justify: auto;
+    /* text-justify: auto; */
     text-align: left;
     letter-spacing: 0.1em;
 }
