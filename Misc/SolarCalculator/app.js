@@ -50,9 +50,9 @@ function update() {
   xhr.open(
     "GET",
     "https://developer.nrel.gov/api/pvwatts/v6.json?api_key=sqwsN0LvPjhe16TTcTN7GL1nGxaerdC5c742GKaO&radius=0&lat=45&lon=-75&system_capacity=10&azimuth=" +
-      azimuth.value +
+      azimuth +
       "&tilt=" +
-      tilt.value +
+      tilt +
       "&array_type=1&dc_ac_ratio=1.2&module_type=1&losses=10&dataset=intl",
     false
   );
