@@ -1,4 +1,4 @@
-/* todo google map input, angular js conversion, dual input[DONE], 
+/* todo google map input, angular js conversion, dual input[DONE],
     round  numbers on tooltips, output csv, hide api-key, more inputs, slider inputs */
 var data1;
 var data2;
@@ -49,7 +49,7 @@ function update() {
   var xhr = new XMLHttpRequest();
   xhr.open(
     "GET",
-    "http://developer.nrel.gov/api/pvwatts/v6.json?api_key=sqwsN0LvPjhe16TTcTN7GL1nGxaerdC5c742GKaO&radius=0&lat=45&lon=-75&system_capacity=10&azimuth=" +
+    "https://developer.nrel.gov/api/pvwatts/v6.json?api_key=sqwsN0LvPjhe16TTcTN7GL1nGxaerdC5c742GKaO&radius=0&lat=45&lon=-75&system_capacity=10&azimuth=" +
       azimuth.value +
       "&tilt=" +
       tilt.value +
@@ -63,7 +63,7 @@ function update() {
   var xhr2 = new XMLHttpRequest();
   xhr2.open(
     "GET",
-    "http://developer.nrel.gov/api/pvwatts/v6.json?api_key=sqwsN0LvPjhe16TTcTN7GL1nGxaerdC5c742GKaO&radius=0&lat=45&lon=-75&system_capacity=10&azimuth=" +
+    "https://developer.nrel.gov/api/pvwatts/v6.json?api_key=sqwsN0LvPjhe16TTcTN7GL1nGxaerdC5c742GKaO&radius=0&lat=45&lon=-75&system_capacity=10&azimuth=" +
       azimuth2.value +
       "&tilt=" +
       tilt2.value +
