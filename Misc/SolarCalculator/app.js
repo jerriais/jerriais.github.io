@@ -49,7 +49,11 @@ function update() {
   var xhr = new XMLHttpRequest();
   xhr.open(
     "GET",
-    `https://developer.nrel.gov/api/pvwatts/v6.json?api_key=sqwsN0LvPjhe16TTcTN7GL1nGxaerdC5c742GKaO&radius=0&lat=45&lon=-75&system_capacity=10&azimuth=${azimuth.value}&tilt=${tilt.value}&array_type=1&dc_ac_ratio=1.2&module_type=1&losses=10&dataset=intl`,
+    "https://developer.nrel.gov/api/pvwatts/v6.json?api_key=sqwsN0LvPjhe16TTcTN7GL1nGxaerdC5c742GKaO&radius=0&lat=45&lon=-75&system_capacity=10&azimuth=" +
+      azimuth.value +
+      "&tilt=" +
+      tilt.value +
+      "&array_type=1&dc_ac_ratio=1.2&module_type=1&losses=10&dataset=intl",
     false
   );
   xhr.send();
@@ -59,7 +63,11 @@ function update() {
   var xhr2 = new XMLHttpRequest();
   xhr2.open(
     "GET",
-    `https://developer.nrel.gov/api/pvwatts/v6.json?api_key=sqwsN0LvPjhe16TTcTN7GL1nGxaerdC5c742GKaO&radius=0&lat=45&lon=-75&system_capacity=10&azimuth=${azimuth2.value}&tilt=${tilt2.value}&array_type=1&dc_ac_ratio=1.2&module_type=1&losses=10&dataset=intl`,
+    "https://developer.nrel.gov/api/pvwatts/v6.json?api_key=sqwsN0LvPjhe16TTcTN7GL1nGxaerdC5c742GKaO&radius=0&lat=45&lon=-75&system_capacity=10&azimuth=" +
+      azimuth2.value +
+      "&tilt=" +
+      tilt2.value +
+      "&array_type=1&dc_ac_ratio=1.2&module_type=1&losses=10&dataset=intl",
     false
   );
   xhr2.send();
