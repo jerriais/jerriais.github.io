@@ -53,7 +53,7 @@ function update() {
       azimuth.value +
       "&tilt=" +
       tilt.value +
-      "&array_type=1&dc_ac_ratio=1.2&module_type=1&losses=10&dataset=intl",
+      "&array_type=1&dc_ac_ratio=1.2&module_type=1&losses=10&dataset=nsrdb",
     false
   );
   xhr.send();
@@ -67,7 +67,7 @@ function update() {
       azimuth2.value +
       "&tilt=" +
       tilt2.value +
-      "&array_type=1&dc_ac_ratio=1.2&module_type=1&losses=10&dataset=intl",
+      "&array_type=1&dc_ac_ratio=1.2&module_type=1&losses=10&dataset=nsrdb",
     false
   );
   xhr2.send();
