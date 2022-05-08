@@ -1,14 +1,23 @@
 {
-  "name": "gamedev",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "name": "pop-ex",
+  "version": "0.0.1",
+  "description": "MomPop game example",
+  "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "budo rick/src/main.js:bundle.js --live",
+    "build": "browserify rick/src/main.js -o bundle.js"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [],
+  "author": "Mr Speaker",
+  "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
-    "budo": "^11.7.0"
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^15.2.0",
+    "budo": "^11.0.1",
+    "eslint": "^4.16.0"
   }
 }
