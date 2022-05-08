@@ -5,4 +5,4 @@ https://jerriais.github.io/index.html
 
 or www.floating-point.ca 
 
-Now in Google Drive.
+Now also in Google Drive.
