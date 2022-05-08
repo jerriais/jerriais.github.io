@@ -30,10 +30,12 @@ function removeClicker(e) {
 function checkGameOver() {
   document.querySelector("#remain").innerHTML = clickers;
   if (clickers === 0) {
-    let audio = new Audio("res/nevergonna.mp4");
-audio.play();
     const taken = Math.round((Date.now() - startTime) / 1000);
     alert (`De-ricked in ${taken} seconds!`);
+  }
+  if (clickers === 1) {
+    let audio = new Audio("res/nevergonna.mp4");
+audio.play();
   }
 }
 
